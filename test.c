@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <moore.h>
+#include "moore.h"
 
 int main(){
 	struct MooreState q0;
@@ -16,5 +16,4 @@ int main(){
 	struct MooreTransition q3_a;
 	struct MooreTransition q3_b;
 
-	
 }
