@@ -20,8 +20,12 @@ int main(){
 	q0_a.destination = &q1;
 	q0_b.input = 'b';
 	q0_b.destination = &q0;
+	q0.name = "q0";
 	q0.output = '0';
 	q0.num_transitions = 2;
-	MooreTransition temp_array[q0.num_transitions] = {q0_a, q0_b}; //This isn't allowed???? I should have done this in C++
+	MooreTransition temp_array[q0.num_transitions] = {q0_a, q0_b}; 
 	q0.transitions = temp_array;
+
+	printState(q0);
+
 }
