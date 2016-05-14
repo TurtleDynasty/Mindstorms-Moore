@@ -16,4 +16,10 @@ int main(){
 	struct MooreTransition q3_a;
 	struct MooreTransition q3_b;
 
+	q0_a.input = 'a';
+	q0_a.destination = &q1;
+	q0_b.input = 'b';
+	q0_b.destination = &q0;
+	q0.output = '0';
+	q0.transition = {q0_a, q0_b}; //This isn't allowed???? I should have done this in C++
 }
